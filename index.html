@@ -243,18 +243,18 @@
 
          <h6>Talk to us</h6>
          <form method="POST" id="form">
-            <input class="email" type="email" placeholder="Work email*" name="email"/>
+            <input class="email" type="email" placeholder="Work email*" name="email" required/>
             <div class="form-group">
-            <input class="first-name" type="text" placeholder="First name*" name="name"/>
-            <input class="last-name" type="text" placeholder="Last name*" name="lname"/>
+            <input class="first-name" type="text" placeholder="First name*" name="name" required/>
+            <input class="last-name" type="text" placeholder="Last name*" name="lname" required/>
             </div>
             <div class="check">
-              <input type="checkbox" name="subscribe" value="yes" checked>
+              <input type="checkbox" name="subscribe" value="yes" required>
               <input type="hidden" name="subscribe" value="no">
             <p>I agree to Fyle's terms and conditions, and provide
               consent to send me communication.</p>
             </div>
-              <button type="submit">Contact Us</button>
+              <button type="submit" id="form-btn">Contact Us</button>
          </form>
       </div>
       <div class="overlay hidden"></div>

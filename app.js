@@ -11,8 +11,8 @@ btnOpenModal.addEventListener("click", toggleModal);
 
 overlay.addEventListener("click", toggleModal);
 
-var form = document.getElementById("form");
-form.addEventListener("submit", formSubmit);
+var form = document.getElementById("form-btn");
+form.addEventListener("click", formSubmit);
 
 function formSubmit(e) {
   e.preventDefault();
@@ -31,4 +31,6 @@ function formSubmit(e) {
     })
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
+
+      document.getElementById("form").reset()
 }
